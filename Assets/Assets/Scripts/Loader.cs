@@ -10,7 +10,6 @@ namespace Completed
         public GameObject boardManager;
 		GameObject curBoard = null;
 		GameObject previousBoard = null;
-		GameObject[][] Boardgrid = new GameObject[4][];
 
         public Vector2 lastBoardPos = new Vector2(0, 0);
 		
@@ -25,10 +24,6 @@ namespace Completed
 
             if (BoardManager.instance == null)
                 Instantiate(boardManager);
-
-			for (int i = 0; i < 4; i++) {
-				Boardgrid[i] = new GameObject[4];
-			}
 		}
 
 		void Update()
